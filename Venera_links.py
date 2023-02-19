@@ -1,5 +1,5 @@
 """Парсинг ссылок ковров на сайте Venera с внесением этих ссылок в таблицу.
-   После завершения запускает файл Parser.py"""
+   После завершения запускает файл Parser_v_2.0.py"""
 import sqlite3
 from bs4 import BeautifulSoup
 import requests as req
