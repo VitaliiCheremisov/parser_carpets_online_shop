@@ -10,8 +10,8 @@ from webdriver_manager.chrome import ChromeDriverManager
 from time import sleep
 
 """На сайте Венеры все характеристики ковров отображаются только после авторизации"""
-username = "anatolii.cheremisov@gmail.com"
-password = "5126787a1"
+username = "username"
+password = "password"
 
 """Настраиваем драйвер браузера"""
 driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
