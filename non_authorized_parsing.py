@@ -1,5 +1,5 @@
-"""Парсинг ковров на сайте Avalon. Без авторизации, ссылки на ковры собираются файлом Avalon_links.py.
-   После завершения запускает файл Avalon_admin.py"""
+"""Парсинг ковров на сайте Avalon. Без авторизации, ссылки на ковры собираются файлом links_parsing.py.
+   После завершения запускает файл authorized_parsing.py"""
 import sqlite3
 from bs4 import BeautifulSoup
 from selenium import webdriver
@@ -122,5 +122,5 @@ for i in range(1, carpet_max_number + 1):
 """Когда все записи успешно внесены, закрываем браузер"""
 driver.close()
 print("Ковры поставщика Avalon внесены")
-# Запускаем файл Avalon_admin.py для начала парсинга ковров под авторизацией
-exec(open('Avalon_admin.py', encoding='utf8').read())
+# Запускаем файл authorized_parsing.py для начала парсинга ковров под авторизацией
+exec(open('authorized_parsing.py', encoding='utf8').read())

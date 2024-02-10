@@ -95,5 +95,5 @@ cur = con.cursor()
 cur.execute("SELECT COUNT(avalon_carpet_links_id) FROM avalon_carpets_links")
 avalon_carpets_number = cur.fetchone()[0]
 print(f"Получено число ссылок ковров 'Avalon': {avalon_carpets_number}")
-# Запускаем файл Avalon_non_admin.py для начала парсинга ковров
-exec(open('Avalon_non_admin.py', encoding='utf8').read())
+# Запускаем файл non_authorized_parsing.py для начала парсинга ковров
+exec(open('non_authorized_parsing.py', encoding='utf8').read())

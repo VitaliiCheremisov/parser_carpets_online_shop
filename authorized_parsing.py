@@ -1,6 +1,6 @@
 """Парсинг ковров на сайте Avalon, с авторизацией.
-   Обновляет базу данных, вносит сведения о цене, размерах и фото ковров, собранных файлом Avalon_non_admin.py.
-   Запускать сначала файл Avalon_links.py, который отработав запустит Avalon_non_admin.py. Avalon_non_admin.py, 
+   Обновляет базу данных, вносит сведения о цене, размерах и фото ковров, собранных файлом non_authorized_parsing.py.
+   Запускать сначала файл links_parsing.py, который отработав запустит non_authorized_parsing.py. non_authorized_parsing.py,
    отработав, в свою очередь запустит данный файл, т.е. парсинг происходит в три этапа.       """
 import sqlite3
 from bs4 import BeautifulSoup
